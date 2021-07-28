@@ -44,8 +44,8 @@ const FeaturesTiles = ({
   );
 
   const sectionHeader = {
-    title: 'Build up the whole picture',
-    paragraph: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum — semper quis lectus nulla at volutpat diam ut venenatis.'
+    title: 'Built on top of the Litecoin blockchain',
+    paragraph: 'Omni transactions are Litecoin transactions that enable next-gen features on the Litecoin Blockchain. Our reference implementation, OmniLite Core is an enhanced Litecoin Core that provides all the features of Litecoin as well as advanced Omni Layer features.'
   };
 
   return (

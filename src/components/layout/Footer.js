@@ -28,6 +28,8 @@ const Footer = ({
     className
   );
 
+  const year = new Date();
+
   return (
     <footer
       {...props}
@@ -45,7 +47,7 @@ const Footer = ({
           </div>
           <div className="footer-bottom space-between text-xxs invert-order-desktop">
             <FooterNav />
-            <div className="footer-copyright">Made by <a href="https://cruip.com">Cruip</a>. All right reserved</div>
+            <div className="footer-copyright">© {year.getFullYear()} <a href="https://cruip.com">Litecoin Foundation</a>. All right reserved</div>
           </div>
         </div>
       </div>
