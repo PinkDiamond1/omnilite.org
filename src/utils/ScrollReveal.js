@@ -1,9 +1,7 @@
 import React, { useState, useEffect, useImperativeHandle } from 'react';
 import PropTypes from 'prop-types';
-import { throttle } from 'lodash';
 
 const ScrollReveal = React.forwardRef((props, ref) => {
-
   const [viewportHeight, setViewportheight] = useState(window.innerHeight); 
   const [revealEl, setRevealel] = useState([]);
 
@@ -56,6 +54,17 @@ const ScrollReveal = React.forwardRef((props, ref) => {
     window.removeEventListener('scroll', handleScroll);
     window.removeEventListener('resize', handleResize);
   };
+
+  const throttle = (func, timeFrame) => {
+    var lastTime = 0;
+    return function (...args) {
+        var now = new Date();
+        if (now - lastTime >= timeFrame) {
+            func(...args);
+            lastTime = now;
+        }
+    };
+  }
 
   const handleScroll = throttle(() => {
     handleListeners();
