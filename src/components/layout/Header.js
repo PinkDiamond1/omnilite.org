@@ -1,7 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import { Link } from 'react-router-dom';
 import Logo from './partials/Logo';
 
 const propTypes = {
@@ -112,10 +111,10 @@ const Header = ({
                       navPosition && `header-nav-${navPosition}`
                     )}>
                     <li>
-                      <Link to="#0" onClick={closeMenu}>Documentation</Link>
+                      <a href="https://api.omnilite.org" onClick={closeMenu}>Documentation</a>
                     </li>
                     <li>
-                      <Link to="#0" onClick={closeMenu}>Explorer</Link>
+                      <a href="https://explorer.omnilite.org" onClick={closeMenu}>Explorer</a>
                     </li>
                   </ul>
                 </div>
