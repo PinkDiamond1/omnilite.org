@@ -41,7 +41,7 @@ const Hero = ({
   // i forgot how to write js
   const os = ['Windows', 'Mac', 'Linux']
   const windowsBinary = 'https://github.com/OmniLite/omnilite/releases/download/v0.18.1/omnilite-0.18.1-win64-setup.exe'
-  const macBinary = 'https://github.com/OmniLite/omnilite/releases/download/v0.18.1/omnilite-0.18.1-osx.dmg'
+  const macBinary = 'https://github.com/OmniLite/omnilite/releases/download/v0.18.1/omnilite-0.18.1-osx-unsigned.dmg'
   const linuxBinary = 'https://github.com/OmniLite/omnilite/releases/tag/v0.18.1'
   var downloadURL = ''
   
