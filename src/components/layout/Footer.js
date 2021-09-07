@@ -47,7 +47,7 @@ const Footer = ({
           </div>
           <div className="footer-bottom space-between text-xxs invert-order-desktop">
             {/* <FooterNav /> */}
-            <div className="footer-copyright">© {year.getFullYear()} <a href="https://cruip.com">Litecoin Foundation</a>. All right reserved</div>
+            <div className="footer-copyright">© {year.getFullYear()} <a href="https://litecoin-foundation.org">Litecoin Foundation</a>. All right reserved</div>
           </div>
         </div>
       </div>
