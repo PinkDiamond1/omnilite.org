@@ -38,6 +38,26 @@ const Hero = ({
     bottomDivider && 'has-bottom-divider'
   );
 
+  // i forgot how to write js
+  const os = ['Windows', 'Mac', 'Linux']
+  const windowsBinary = 'https://github.com/OmniLite/omnilite/releases/download/v0.18.1/omnilite-0.18.1-win64-setup.exe'
+  const macBinary = 'https://github.com/OmniLite/omnilite/releases/download/v0.18.1/omnilite-0.18.1-osx.dmg'
+  const linuxBinary = 'https://github.com/OmniLite/omnilite/releases/tag/v0.18.1'
+  var downloadURL = ''
+  
+    os.find(system => {
+      if (navigator.appVersion.indexOf(system) >= 0) {
+        if (system === 'Windows') {
+          downloadURL =  windowsBinary
+        } else if (system === 'Mac') {
+          downloadURL =  macBinary
+        } else {
+          downloadURL =  linuxBinary
+        }
+      }
+    })
+  
+
   return (
     <section
       {...props}
@@ -55,7 +75,7 @@ const Hero = ({
                 </p>
               <div className="reveal-from-bottom" data-reveal-delay="600">
                 <ButtonGroup>
-                  <Button tag="a" color="primary" wideMobile href="https://github.com/OmniLite/OmniLite/tags">
+                  <Button tag="a" color="primary" wideMobile href={downloadURL}>
                     Download
                     </Button>
                   <Button tag="a" color="dark" wideMobile href="https://github.com/omnilite/omnilite">

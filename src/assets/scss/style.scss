@@ -126,3 +126,17 @@
 # Helpers
 --------------------------------------------------------------*/
 @import "core/base/helpers";
+
+.hero-inner.section-inner {
+    display: flex;
+}
+
+.hero-content {
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h1.mt-0.mb-16.reveal-from-bottom.is-revealed {
+    width: 100%;
+}
