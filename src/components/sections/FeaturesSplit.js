@@ -125,7 +125,7 @@ const FeaturesSplit = ({
                   Issue NFTs
                   </h3>
                 <p className="m-0">
-                  Omni allows you to issue NFTs (non-fungibile tokens) without leaving Litecoin. Create an manage tokens, etc. etc. (currently work-in-progress)
+                  Omni allows you to issue NFTs (non-fungibile tokens) without leaving Litecoin. Create and manage tokens, etc. etc. (currently work-in-progress)
                   </p>
               </div>
               <div className={
